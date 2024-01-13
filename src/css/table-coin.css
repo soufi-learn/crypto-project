@@ -1,0 +1,50 @@
+.home-page-container {
+  min-height: 75vh;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-container::-webkit-scrollbar {
+  height: 5.5px;
+}
+
+table {
+  border-collapse: collapse !important;
+  width: 100%;
+  min-width: 800px;
+}
+
+table thead {
+  border-bottom: 2px solid #9b9b9b !important;
+}
+
+table thead th {
+  padding: 10px 0;
+}
+
+table tbody tr {
+  height: 80px;
+}
+
+table tbody .crypto-img {
+  width: 40px;
+  margin-right: 0.6rem;
+}
+
+table tbody .crypto-symbol {
+  color: #bcbcbc;
+}
+table tbody .details-btn {
+  cursor: pointer;
+}
+
+.top-price-change {
+  color: springgreen;
+}
+
+.down-price-change {
+  color: rgb(224, 77, 77);
+}

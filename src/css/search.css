@@ -1,0 +1,124 @@
+.search-wrapper {
+  margin-bottom: 3rem;
+  width: fit-content;
+  position: relative;
+}
+
+@media screen and (max-width: 575px) {
+  .search-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.search-wrapper .search-controller-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.search-wrapper .input-box {
+  position: relative;
+}
+
+.search-wrapper .search-input {
+  width: 310px;
+  border: none;
+  box-shadow: none !important;
+  background: rgb(48, 69, 83);
+  color: #fff !important;
+  font-size: 1.1rem;
+  font-family: varela;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.search-wrapper .search-input:focus {
+  border: 2px solid rgb(75, 114, 139);
+  background: rgb(48, 69, 83);
+}
+
+.search-wrapper .search-input::placeholder {
+  color: #89a4b5;
+}
+
+/* clear button */
+.search-wrapper .clear-input-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.6rem;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.2s;
+  outline: none;
+  border: none;
+}
+
+.search-wrapper .clear-input-btn:hover {
+  color: #e16464;
+}
+
+/* select box */
+.search-wrapper .price-select {
+  width: 100px;
+  box-shadow: none;
+  color: #fff;
+  background-color: rgb(48, 69, 83);
+  transition: all 0.2s;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round'  stroke-width='3' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+
+/* coins list box */
+.search-wrapper .coins-list-box {
+  width: 310px;
+  margin-top: 0.7rem;
+  position: absolute;
+  top: 43px;
+  z-index: 99;
+  max-height: 530px;
+  padding: 0.6rem;
+  overflow: auto;
+  background: #1e3041;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgb(75, 114, 139);
+}
+
+/* hide scrollbar of search box result */
+.search-wrapper .coins-list-box::-webkit-scrollbar {
+  width: 0;
+}
+
+.search-wrapper .coins-list .coin-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(48, 69, 83);
+  padding: 0.6rem 0;
+  cursor: pointer;
+}
+
+.search-wrapper .coins-list .coin-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.search-wrapper .coins-list .coin-item:first-child {
+  padding-top: 0.2rem;
+}
+
+.search-wrapper .coins-list .coin-item .coin-thumb {
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+/* loading */
+.coins-list-box .search-loading-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
